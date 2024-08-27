@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Command Prompt Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio loop autoplay>
+        <source src="path/to/file" type=".mp3">
+    </audio>
+
+    <!-- Welcome Page -->
+    <div class="welcome-page">
+        <div class="welcome-text">
+            <h2 id="wlcmtxt">Booting......</h2>
+            <div class="loader">
+                <div class="bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="terminal" style="display: none;">
+        <video autoplay loop muted class="side_animation">
+            <source src="content/side_animation.mp4" type="video/mp4">
+        </video>
+        <div id="output">
+            <h1>Rishi Kant Shukla</h1>
+            <p id="typed-text"></p>
+            <br>
+            <p id="commands">Commands : <br>
+                1. Type "About" to know about me 🙋! <br>
+                2. Type "Projects" to see my projects 🔥!<br>
+                3. Type "Skills" to know what can I do 😱!<br>
+                4. Type "Education" to know my Education ! !<br>
+                5. Type "Voice" to activate the voice assistant!<br>
+                6. Type "Clear" to clear the terminal!
+            </p>
+        </div>
+        <div id="input-line">
+            <span class="prompt">Users\Visitor$&gt;</span>
+            <audio id="input-sound" src="content/click-sound.mp3"></audio>
+            <audio id="typing-sound" src="content/typing-sound.mp3"></audio>
+            <input type="text" id="command-input" autofocus>
+        </div>
+    </div>
+
+    <!-- Voice Assistant Page -->
+    <div id="voice-assistant-page" style="display: none;">
+        <div class="voice-container">
+            
+            <div class="video-container">
+                <div class="glow-effect"></div>
+            <video autoplay loop muted class="center-animation">
+                <source src="content/side_animation.mp4" type="video/mp4">
+            </video>
+        </div>
+            <div id="voice-wave">
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+                <div class="wave-bar"></div>
+            </div>
+            
+            <div class="assistant-text" id="assistant-text">
+                <p>Loading...</p>
+            </div>
+            <div class="btn-container">
+            <button id="listen-button">Listen</button>
+            <button id="back-button">Back to Command Prompt</button>
+        </div>
+        </div>
+        <div id="chat-window">
+            <div id="chat-header">Chat</div>
+            <div id="chat-messages"></div>
+            <div id="chat-input">
+                <input type="text" id="chat-input-field" placeholder="Type a message..." />
+                <button id="send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
