@@ -310,3 +310,4 @@ const typedTextElement = document.getElementById('typed-text');
   document.addEventListener('DOMContentLoaded', () => {
     typeText();
   });
+
